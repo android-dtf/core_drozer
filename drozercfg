@@ -19,8 +19,8 @@
 #@Health: stable
 #@Version: 1.0.0
 
-. $DTF_CORE
-. $DTF_LOG
+. "$DTF_CORE"
+. "$DTF_LOG"
 
 drozer_apk="${DTF_PACKAGES}/Drozer/drozer-agent-2.3.2.apk"
 drozer_package=com.mwr.dz
@@ -58,7 +58,7 @@ do_install()
 
         log_i "Reinstalling Drozer..."
         adb uninstall ${drozer_package}
-        install_drozer ${drozer_apk}
+        install_drozer "${drozer_apk}"
         exit 0
     fi
 
@@ -71,7 +71,7 @@ do_install()
         drozer_apk=$2
     fi
 
-    install_drozer ${drozer_apk}
+    install_drozer "${drozer_apk}"
     return 0
 }
 
