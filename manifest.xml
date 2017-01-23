@@ -1,0 +1,16 @@
+<Items>
+    <Item type="module"
+          name="drozercfg"
+          version="1.0.0"
+          health="stable"
+          author="Jake Valletta (jakev)"
+          about="Drozer client manager."
+          localName="drozercfg" />
+
+    <Item type="package"
+          name="Drozer"
+          version="1.1.0"
+          health="stable"
+          author="Jake Valletta (jakev)"
+          localName="Drozer" />
+</Items>
